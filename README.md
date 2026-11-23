@@ -112,8 +112,8 @@ The following figures illustrate the experimental results and analysis.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/mariam851/REPOSITORY_NAME.git
-cd REPOSITORY_NAME
+git clone https://github.com/mariam851/conformal-ood-recourse.git
+cd conformal-ood-recourse
 ```
 
 ### 2. Create a Virtual Environment
@@ -152,22 +152,4 @@ Run the test suite using:
 pytest
 ```
 
----
 
-## Research Manuscript
-
-The accompanying manuscript is available in:
-
-[`OOD_detection_Paper.pdf`](OOD_detection_Paper.pdf)
-
----
-
-## Author
-
-**Mariam Zakaria Moussa Ali**
-
-Department of Computer Science (AI & Data Science)  
-Arab Open University, Egypt
-
-- **Email:** mariamza200400@gmail.com
-- **GitHub:** [mariam851](https://github.com/mariam851)
