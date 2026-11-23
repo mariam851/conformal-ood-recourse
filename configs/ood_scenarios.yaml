@@ -1,0 +1,11 @@
+# Family 1: synthetic covariate shift applied to rows of the `test` split.
+# Severities are multiples of the per-feature standard deviation measured on `train`.
+covariate_shift:
+  kinds: [mean_shift, gaussian_noise]
+  severities: [0.25, 0.5, 1.0, 2.0, 4.0]    # should span "near chance" to "trivially detectable"; see notebook 02
+  # dense_numeric : numeric features whose most common value covers <= max_mode_share of train rows
+  # all_numeric   : every numeric feature (includes zero-inflated ones; see decisions.md D7)
+  # or an explicit list of numeric column names
+  features: dense_numeric
+  max_mode_share: 0.75
+  

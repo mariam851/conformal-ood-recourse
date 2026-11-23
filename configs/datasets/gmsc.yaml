@@ -1,0 +1,11 @@
+﻿name: gmsc
+raw_file: gmsc.csv
+target: FinancialDistressNextTwoYears
+positive_label: "No"
+drop_columns: []
+numeric: [RevolvingUtilizationOfUnsecuredLines, age, NumberOfTime30-59DaysPastDueNotWorse, DebtRatio, MonthlyIncome, NumberOfOpenCreditLinesAndLoans, NumberOfTimes90DaysLate, NumberRealEstateLoansOrLines, NumberOfTime60-89DaysPastDueNotWorse, NumberOfDependents]
+categorical: []
+immutable: [age]
+recourse:
+  extra_immutable: [NumberOfDependents]
+  monotone_increasing: []

@@ -1,0 +1,19 @@
+# Generic recourse settings. Dataset-specific actionability lives in configs/datasets/<name>.yaml (block `recourse`).
+recourse:
+  target_prob: 0.5            # a counterfactual must reach P(y=1) >= target_prob
+  spike_immutable: true       # features dominated by one value (e.g. capital-gain) are not actionable (same rule as D7)
+  max_mode_share: 0.75
+
+search:                       # model-agnostic evolutionary search
+  pop_size: 150
+  generations: 30
+  elite_frac: 0.1
+  tournament: 3
+  mutation_rate: 0.3
+  sparsity_weight: 0.1        # cost += sparsity_weight * (number of changed features)
+  penalty: 100.0              # weight of the target-probability and gate violations
+
+gate:                         # OOD gate = conformal rule of a per-row detector, calibrated on `calib`
+  alpha: 0.05
+  delta: 0.01
+  

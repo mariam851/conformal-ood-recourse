@@ -1,0 +1,27 @@
+project:
+  default_seed: 0
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]   # benchmark protocol: 10 seeds
+
+paths:
+  data_raw: data/raw
+  data_interim: data/interim
+  data_processed: data/processed
+  data_ood: data/ood
+  results: results
+
+# Fractions of the full dataset. Must sum to 1.
+#   train      -> fit the GBDT / ExtraTrees embedder
+#   calib_fit  -> held-out ID reference sample (e.g. reference set for APHD scores)
+#   calib      -> ID calibration scores -> conformal p-values
+#   test       -> final ID test set
+# calib_fit and calib MUST stay disjoint, otherwise the conformal guarantee breaks.
+splits:
+  train: 0.5
+  calib_fit: 0.1
+  calib: 0.2
+  test: 0.2
+
+conformal:
+  alpha: 0.05    # target FPR on in-distribution data
+  delta: 0.01    # failure probability of the calibration-conditional guarantee
+  

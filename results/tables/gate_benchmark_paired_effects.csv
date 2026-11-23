@@ -1,0 +1,25 @@
+gate,target,metric,diff,ci_low,ci_high,n_pairs,only_gate,only_none,p,seeds_drop_2pts,n_seeds,p_holm,role,verdict
+gate_IF,0.6,flag_IF,-0.023,-0.0354,-0.0106,565,0.0,13.0,0.0002,2.0,5.0,0.0027,own,
+gate_IF,0.6,flag_LOF,0.0035,-0.0035,0.0106,565,3.0,1.0,0.625,0.0,5.0,1.0,pool (not in gate),none
+gate_IF,0.6,flag_kNN,-0.0142,-0.0265,-0.0035,565,1.0,9.0,0.0215,1.0,5.0,0.1934,pool (not in gate),inconclusive
+gate_IF,0.6,flag_GMM,-0.0035,-0.0106,0.0035,565,1.0,3.0,0.625,0.0,5.0,1.0,held-out,none
+gate_IF,0.6,flag_OCSVM,-0.0142,-0.0265,-0.0035,565,1.0,9.0,0.0215,2.0,5.0,0.1934,held-out,inconclusive
+gate_IF,0.6,robust,0.0018,-0.0029,0.0077,565,,,,,,,,
+gate_IF,0.6,cost,0.0248,0.0108,0.0416,565,,,,,,,,
+gate_IF,0.6,n_changed,0.023,0.0088,0.0389,565,,,,,,,,
+gate_LOF,0.6,flag_IF,-0.0017,-0.0084,0.0051,593,2.0,3.0,1.0,0.0,5.0,1.0,pool (not in gate),none
+gate_LOF,0.6,flag_LOF,-0.0573,-0.0776,-0.0388,593,1.0,35.0,0.0,5.0,5.0,0.0,own,
+gate_LOF,0.6,flag_kNN,-0.0101,-0.0202,-0.0017,593,1.0,7.0,0.0703,0.0,5.0,0.4922,pool (not in gate),inconclusive
+gate_LOF,0.6,flag_GMM,-0.0051,-0.0118,0.0,593,0.0,3.0,0.25,0.0,5.0,1.0,held-out,none
+gate_LOF,0.6,flag_OCSVM,-0.0101,-0.0202,-0.0017,593,1.0,7.0,0.0703,0.0,5.0,0.4922,held-out,inconclusive
+gate_LOF,0.6,robust,0.0006,-0.0062,0.0067,593,,,,,,,,
+gate_LOF,0.6,cost,0.0167,0.004,0.0296,593,,,,,,,,
+gate_LOF,0.6,n_changed,0.0304,0.0118,0.0489,593,,,,,,,,
+gate_ALL,0.6,flag_IF,-0.024,-0.037,-0.0129,541,0.0,13.0,0.0002,3.0,5.0,0.0027,own,
+gate_ALL,0.6,flag_LOF,-0.0628,-0.085,-0.0444,541,1.0,35.0,0.0,5.0,5.0,0.0,own,
+gate_ALL,0.6,flag_kNN,-0.0351,-0.05,-0.0203,541,0.0,19.0,0.0,4.0,5.0,0.0,own,
+gate_ALL,0.6,flag_GMM,-0.0092,-0.0203,0.0,541,1.0,6.0,0.125,0.0,5.0,0.625,held-out,none
+gate_ALL,0.6,flag_OCSVM,-0.0296,-0.0444,-0.0166,541,0.0,16.0,0.0,4.0,5.0,0.0004,held-out,transfer
+gate_ALL,0.6,robust,0.0049,-0.0031,0.0136,541,,,,,,,,
+gate_ALL,0.6,cost,0.0536,0.0333,0.0777,541,,,,,,,,
+gate_ALL,0.6,n_changed,0.0573,0.0314,0.0832,541,,,,,,,,

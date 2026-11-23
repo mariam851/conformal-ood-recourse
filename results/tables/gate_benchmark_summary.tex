@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Mean $\pm$ sd over seeds (gate benchmark).}
+\label{tab:gate_benchmark_summary}
+\small
+\begin{tabular}{llllllllllll}
+\toprule
+variant & target & gate & success & cost & n\_changed & flag\_IF & flag\_LOF & flag\_kNN & flag\_GMM & flag\_OCSVM & robust \\
+\midrule
+main & 0.600 & gate\_ALL & 0.542 $\pm$ 0.029 & 2.722 $\pm$ 0.148 & 2.360 $\pm$ 0.043 & 0.004 $\pm$ 0.005 & 0.018 $\pm$ 0.011 & 0.020 $\pm$ 0.017 & 0.020 $\pm$ 0.008 & 0.066 $\pm$ 0.018 & 0.915 $\pm$ 0.033 \\
+main & 0.600 & gate\_IF & 0.565 $\pm$ 0.036 & 2.801 $\pm$ 0.190 & 2.365 $\pm$ 0.021 & 0.019 $\pm$ 0.014 & 0.088 $\pm$ 0.025 & 0.077 $\pm$ 0.024 & 0.035 $\pm$ 0.013 & 0.103 $\pm$ 0.029 & 0.907 $\pm$ 0.026 \\
+main & 0.600 & gate\_LOF & 0.594 $\pm$ 0.042 & 2.866 $\pm$ 0.182 & 2.407 $\pm$ 0.043 & 0.087 $\pm$ 0.021 & 0.023 $\pm$ 0.014 & 0.120 $\pm$ 0.017 & 0.062 $\pm$ 0.029 & 0.147 $\pm$ 0.026 & 0.902 $\pm$ 0.031 \\
+main & 0.600 & none & 0.597 $\pm$ 0.044 & 2.861 $\pm$ 0.210 & 2.381 $\pm$ 0.040 & 0.093 $\pm$ 0.022 & 0.085 $\pm$ 0.016 & 0.135 $\pm$ 0.022 & 0.067 $\pm$ 0.031 & 0.161 $\pm$ 0.032 & 0.901 $\pm$ 0.029 \\
+\bottomrule
+\end{tabular}
+\end{table}

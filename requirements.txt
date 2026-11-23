@@ -1,0 +1,4 @@
+# Single source of truth for dependencies is pyproject.toml.
+# This installs the package in editable mode (so notebooks can `import conformal_trees`)
+# together with all optional groups.
+-e .[models,notebooks,dev]

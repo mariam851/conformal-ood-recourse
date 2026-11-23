@@ -1,0 +1,20 @@
+gbdt:
+  early_stopping_rounds: 50
+  val_fraction: 0.1          # carved out of `train` only; never from calib_fit / calib / test
+  lightgbm:
+    n_estimators: 2000       # upper bound; early stopping picks the real number
+    learning_rate: 0.05
+    num_leaves: 31
+    min_child_samples: 20
+    subsample: 0.8
+    subsample_freq: 1
+    colsample_bytree: 0.8
+    reg_lambda: 1.0
+    n_jobs: 4
+
+embedder:                    # ExtraTrees leaf embedder (TOOD-style); fit on `train` only
+  n_estimators: 100
+  min_samples_leaf: 1        # sklearn default, chosen a priori (NOT tuned on OOD scenarios); see decisions.md D10
+  max_features: sqrt
+  n_jobs: 4
+  

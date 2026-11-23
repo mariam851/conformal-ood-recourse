@@ -1,0 +1,22 @@
+name: adult
+raw_file: adult.csv
+target: class
+positive_label: ">50K"        # y = 1 means income > 50K (the favourable outcome)
+
+# fnlwgt is a census sampling weight (not a feature a person can have);
+# education duplicates education-num, which is ordinal and more useful.
+drop_columns: [fnlwgt, education]
+
+numeric: [age, education-num, capital-gain, capital-loss, hours-per-week]
+categorical: [workclass, marital-status, occupation, relationship, race, sex, native-country]
+
+# Used later by the recourse layer: these must never appear in a counterfactual change.
+immutable: [age, sex, race, native-country]
+
+# Actionability for the recourse study (decision D16, to be confirmed by the author).
+# Telling someone to change their marital status or relationship is not actionable advice.
+# Spike features (capital-gain / capital-loss) are excluded automatically by the dense rule.
+recourse:
+  extra_immutable: [marital-status, relationship]
+  monotone_increasing: [education-num]
+  
