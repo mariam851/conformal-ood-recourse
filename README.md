@@ -88,13 +88,3 @@ pip install -r requirements.txt
 ```bash
 pytest
 ```
-
-## Author
-
-**Mariam Zakaria Moussa Ali**
-
-Department of Computer Science (AI & Data Science)  
-Arab Open University, Egypt
-
-Email: `mariamza200400@gmail.com`  
-GitHub: [mariam851](https://github.com/mariam851)
