@@ -37,11 +37,15 @@ Evaluated on **UCI Adult** and **Give Me Some Credit (GMSC)**.
 - Significant reductions in held-out flags:
   - `OCSVM`: $\Delta \text{flag}_{\text{OCSVM}} = -0.0346$, $p = 1.0751 \times 10^{-4}$
   - `GMM`: $\Delta \text{flag}_{\text{GMM}} = -0.1663$, $p = 3.5679 \times 10^{-16}$
-- Higher matched recourse cost:
+- Higher matched recourse cost:<img width="944" height="626" alt="Screenshot (447)" src="https://github.com/user-attachments/assets/bf55980d-e8af-4f35-ae3b-c8790f82b781" />
+
   - $\Delta \text{cost} = +0.3035$
   - $p = 1.3365 \times 10^{-5}$
 - Stricter feasibility:
   - `found`: 0.9240 → 0.3182
+ 
+<img width="944" height="626" alt="Screenshot (447)" src="https://github.com/user-attachments/assets/af112163-94c3-4cbd-8e5f-6828eaa534ff" />
+
 
 ## Repository Structure
 
