@@ -72,17 +72,9 @@ These results highlight the trade-off between improved held-out plausibility and
 
 The following figures illustrate the experimental results and analysis.
 
-**Figure 1. Adult benchmark results**
-
 ![Adult Experimental Results](https://github.com/user-attachments/assets/bf55980d-e8af-4f35-ae3b-c8790f82b781)
 
-**Figure 2. Additional benchmark analysis**
-
 ![Additional Experimental Analysis](https://github.com/user-attachments/assets/4db37811-af97-4faa-83d2-b66381836e67)
-
-**Figure 3. GMSC benchmark results**
-
-![GMSC Experimental Results](https://github.com/user-attachments/assets/af112163-94c3-4cbd-8e5f-6828eaa534ff)
 
 ---
 
